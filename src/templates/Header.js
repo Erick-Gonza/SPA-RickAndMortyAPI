@@ -1,7 +1,6 @@
 const Header = () => {
   const view = `
 
-<header>
   <nav class="nav-container">
     <section class="nav-container-logo">
       <a href="/">
@@ -14,12 +13,9 @@ const Header = () => {
     </section>
 
     <section class="nav-container-links">
-      <h1><a href="/">Home</a></h1>
-      <h1><a href="#/about/">About</a></h1>
-      <h1><a href="#/contact/">Contact</a></h1>
+      <h1><a href="/">Rick and Morty Characters</a></h1>
     </section>
   </nav>
-</header>
 `;
   return view;
 };
