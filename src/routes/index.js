@@ -1,18 +1,18 @@
-import Header from "../templates/Header";
-import Home from "../pages/Home";
-import Character from "../pages/Character";
-import Error404 from "../pages/Error404";
-import resolveRouts from "../utils/resolveRouts";
-import getHash from "../utils/getHash";
+import Header from '../templates/Header';
+import Home from '../pages/Home';
+import Character from '../pages/Character';
+import Error404 from '../pages/Error404';
+import resolveRouts from '../utils/resolveRouts';
+import getHash from '../utils/getHash';
 
 const routes = {
-  "/": Home,
-  "/:id": Character,
+  '/': Home,
+  '/:id': Character,
 };
 
 const router = async () => {
-  const header = null || document.getElementById("header");
-  const content = null || document.getElementById("content");
+  const header = null || document.getElementById('header');
+  const content = null || document.getElementById('content');
 
   header.innerHTML = await Header();
   let hash = getHash();
