@@ -4,9 +4,11 @@ import getHash from '../utils/getHash';
 const Home = async () => {
   const page = await getHash();
   const characters = await getData(page);
+
   const sortCharacters = await characters.results.sort(
     () => Math.random() - 0.5
   );
+
   const view = `
   <section class="characters">
   ${sortCharacters

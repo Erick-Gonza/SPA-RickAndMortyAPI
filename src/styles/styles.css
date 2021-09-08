@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+:root {
+  --main-bg-color: #fffffe;
+  --secondary-bg-color: #0f0e17;
+  --image-bg-color: #f25f4c;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+}
+header {
+  height: 12rem;
+  padding: 1rem;
+  background-color: var(--secondary-bg-color);
+}
+header .logo {
+  height: 7rem;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav section ol {
+  list-style: none;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+nav .item {
+  text-decoration: none;
+  color: var(--main-bg-color);
+  margin: 0rem 0.2rem;
+  padding: 0.2rem;
+}
+nav .item:hover {
+  background-color: var(--image-bg-color);
+  border-radius: 0.2rem;
+  border: 0.2rem solid var(--main-bg-color);
+}
+footer {
+  padding: 4rem 0;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer section ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+footer section ul li {
+  padding: 0 1rem;
+}
+footer section ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+footer section .list-inline {
+  display: flex;
+  justify-content: center;
+}
+footer section .list-inline li:hover {
+  background-color: var(--image-bg-color);
+  border-radius: 0.2rem;
+  border: 0.2rem solid var(--main-bg-color);
+}
+footer section ul a:hover {
+  opacity: 1;
+}
+footer .social {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+footer .social > a {
+  font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid var(--main-bg-color);
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+footer .social > a:hover {
+  opacity: 0.9;
+}
+footer .copyright {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--main-bg-color);
+  margin-bottom: 0;
+}

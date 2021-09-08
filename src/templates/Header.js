@@ -1,17 +1,21 @@
 const Header = () => {
   const view = `
-  <nav class="nav-container">
-    <section class="nav-container-logo">
+  <nav>
+    <section class="">
       <a href="/">
         <img
           class="logo"
-          src="https://i.ibb.co/41R00n4/pngwing-com.png"
+          src="../assets/images/logo.png"
           alt="Logo"
         />
       </a>
     </section>
-    <section class="nav-container-links">
-      <h1><a href="/">Rick and Morty Characters</a></h1>
+
+    <section>
+      <ol>
+        <li ><a href="/" class="item">Home</a></li>
+        <li ><a href="#social" class="item">Contact</a></li>
+      </ol>
     </section>
   </nav>
 `;
