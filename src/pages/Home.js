@@ -19,7 +19,8 @@ const Home = async () => {
       <img src="${character.image}" alt="${character.name}">
       
       <section>
-        <h2>${character.name}</h2>
+        <h2>Name: ${character.name}</h2>
+        <h2>Status: ${character.status}</h2>
       </section>
       </a>
     </article>
